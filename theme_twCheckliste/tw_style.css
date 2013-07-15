@@ -1,0 +1,127 @@
+* {
+	background-color: white !important;
+	background-image: none !important;
+}
+
+body {
+	background-color: #FFFFFF;
+	color: #000000;
+	font: 11px "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
+	max-width: 794px;
+}
+
+h1 {
+	clear: both;
+	font-size: 16px;
+	padding-top: 15px;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #88BA15;
+}
+
+h3 {
+	margin-bottom: 0px;
+}
+
+p {
+	font-size: 11px;
+	color: #000000;
+	text-decoration: none;
+	display: inline-block;
+	font-weight: bold;
+}
+
+img {
+	border: none;
+}
+
+.optiongroup {
+	padding: 0 15px 0 0;
+}
+
+.group {
+
+}
+
+.checkliste_option {
+	padding: 5px 0;
+}
+
+.checkliste_eingabefeld {
+	display: inline;
+	margin-left: 5px;
+}
+
+.ebene2 {
+	page-break-inside: avoid;
+	clear: both;
+	float: left;
+	width: 100%;
+	padding-bottom: 10px;
+	display: block;
+}
+.ebene3 {
+    display: block;
+    float: left;
+    margin-right: 2%;
+    width: 48%;
+}
+
+.ebene3_group {
+    display: block;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.checkliste_option {
+    float: left;
+    margin-right: 10px;
+    margin-top: 0;
+    width: 310px;
+}
+
+.checkliste_option_long {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+    max-width: 350px;
+}
+
+.checkliste_checkbox {
+    border: 1px solid #88BA15;
+    float: left;
+    height: 5px;
+    margin: 4px;
+    width: 5px;
+}
+
+.checklist1 img {
+	display: none;
+}
+
+.checklist1 * {
+	float: none !important;
+}
+
+.checklist1 .ebene2 {
+	border: none;
+	padding: 0;
+}
+
+.geprueft span {
+	color: #88BA15;
+    font-size: 12px;
+    font-weight: bold;
+}
+.geprueft {
+    display: block;
+    float: right;
+    text-align: right;
+    width: 100%;
+    padding: 25px 0 10px 0;
+    border-bottom: 2px solid #88BA15;
+}

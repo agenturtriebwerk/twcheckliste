@@ -1,0 +1,43 @@
+/**
+ * style.css for Plugin twcheckliste
+ *
+ * @license    GPL 2 (http://www.gnu.org/licenses/gpl.html)
+ * @author     Matthias Wild <m.wild@agentur-triebwerk.de
+ *
+ */
+
+#checkliste input {
+	margin: 0 5px 0 0;
+}
+
+#checkliste ol li div {
+	display: inline;
+}
+
+#checkliste ol.hideit{
+	display:none;
+}
+#checkliste ol.hideit_tmp {
+	position: absolute;
+	left: -9999px;
+	top: 0;
+}
+
+#checkliste h4,#checkliste .level4{
+	display:none;
+}
+#checkliste h3{
+	font-weight:normal;
+	font-size:12px;
+	margin-bottom:5px;
+	margin-left: 20px;
+}
+
+#checkliste hr {
+	border: none;
+	clear: none;
+}
+
+#checkliste .editbutton_section {
+	display: none;
+}

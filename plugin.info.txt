@@ -1,0 +1,5 @@
+author Matthias Wild
+email m.wild@agentur-triebwerk.de
+date 2013-07-11
+name twcheckliste
+desc Plugin ermöglicht das Erstellen von Checklisten. 
