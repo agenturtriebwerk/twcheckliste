@@ -1,6 +1,6 @@
 
 <?
-	$conf["logo"] = "/lib/plugins/twcheckliste/theme_twCheckliste/img/logo_triebwerk_slogan.png";
-	$conf["farbcode"] = "#88BA15";
-	$conf["footertext"] = "Geprüft durch";
-?>
+	$conf["logo"] = "/lib/plugins/twcheckliste/theme_twCheckliste/img/logo_default.png";
+	$conf["farbcode"] = "#2B73B7";
+	$conf["footertext"] = "Unterschrift";
+?>  
