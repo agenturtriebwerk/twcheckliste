@@ -2,7 +2,7 @@
  * script.js for Plugin twcheckliste
  *
  * @license    GPL 2 (http://www.gnu.org/licenses/gpl.html)
- * @author     Matthias Wild <m.wild@agentur-triebwerk.de
+ * @author     web@agentur-triebwerk.de
  *
  */
 

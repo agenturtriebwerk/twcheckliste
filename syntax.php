@@ -3,7 +3,7 @@
  * Plugin twcheckliste:
  * v1.0
  * @license  GPL 2 (http://www.gnu.org/licenses/gpl.html)
- * @author   m.wild@agentur-triebwerk.de
+ * @author   web@agentur-triebwerk.de
  */
 
 if (!defined('DOKU_INC'))
@@ -107,7 +107,7 @@ class syntax_plugin_twcheckliste extends DokuWiki_Syntax_Plugin {
 					break;
 
 				case DOKU_LEXER_EXIT :
-					$renderer -> doc .= '</div><br /><input type="submit" class="button" name="checkliste" value="Checkliste geniereren" /> </form>';
+					$renderer -> doc .= '</div><br /><input type="submit" class="button" name="checkliste" value="'.$this -> getLang('btn_generieren').'" /> </form>';
 					//close hiddenBody and hiddenGlobal
 					/*if (array_pop($this -> editableBlocks)) {
 					 $renderer -> finishSectionEdit($data['bytepos_end']);

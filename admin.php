@@ -3,7 +3,7 @@
  * Plugin twcheckliste:
  * v1.0
  * @license  GPL 2 (http://www.gnu.org/licenses/gpl.html)
- * @author   m.wild@agentur-triebwerk.de
+ * @author   web@agentur-triebwerk.de
  */
 
 // must be run within Dokuwiki

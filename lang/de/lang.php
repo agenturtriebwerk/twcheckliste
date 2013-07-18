@@ -5,4 +5,5 @@
 	$lang['label_farbcode'] = 'Farbcode';
 	$lang['label_footertext'] = 'Footertext';
 	$lang['btn_save'] = 'Speichern';
+	$lang['btn_generieren'] = 'Checkliste geniereren';
 ?>

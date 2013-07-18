@@ -6,7 +6,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" type="text/css" href="tw_style.css" media="all" />
-		<title><? echo "Checkliste"; ?></title>
+		<title><? echo "Checklist"; ?></title>
 		<style type="text/css">
 			h2, .geprueft span {
 				color: <?php echo $conf['farbcode'];?> !important;
