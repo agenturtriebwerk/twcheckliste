@@ -25,6 +25,7 @@ LEGEND:
 
 EXAMPLE:
 ================================================
+```
 <checkliste>
 
 ===== Section A =====
@@ -52,3 +53,4 @@ EXAMPLE:
   - Checkpoint 2.
 
 </checkliste>
+```
