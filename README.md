@@ -14,13 +14,13 @@ INSTALLATION:
 LEGEND:
 ================================================
 
-H2 = Section (contains Areas). To adapt checklist before generating print-view
-H3 = Area (contains checkpoints). To adapt checklist before generating print-view
-H4 = Checkpoint
-OL (List item) = Options or free text
-HR (Dividing line) = Fixed distance
-EINGABEFELD = ............
-EINGABEFELDLANG = ........................
+- H2 = Section (contains Areas). To adapt checklist before generating print-view
+- H3 = Area (contains checkpoints). To adapt checklist before generating print-view
+- H4 = Checkpoint
+- OL (List item) = Options or free text
+- HR (Dividing line) = Fixed distance
+- EINGABEFELD = ............
+- EINGABEFELDLANG = ........................
 
 
 EXAMPLE:
