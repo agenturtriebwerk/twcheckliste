@@ -7,8 +7,8 @@ Plugin for easy creation of printable checklists. The checkpoints within checkli
 INSTALLATION:
 ================================================
 
-1. Install the plugin using the Plugin Manager and the download URL above, which points to latest version of the plugin.
-2. Unzip the Plugin and move the folder (twcheckliste) in the plugin directory 
+1. Download the plugin.
+2. Unzip the Plugin and move the folder (twcheckliste) in the plugin directory.
 2. Configure the plugin via the admin area.
 
 
