@@ -22,6 +22,15 @@
 	left: -9999px;
 	top: 0;
 }
+#checkliste h1 span {
+	display: none;
+}
+#checkliste h3 span {
+	display: none;
+}
+#checkliste h2 span {
+	display: none;
+}
 
 #checkliste h4,#checkliste .level4{
 	display:none;

@@ -15,7 +15,7 @@ jQuery.fn.toggleCheckbox = function() {
 	// this.prop('checked', !this.prop('checked'));
 };
 
-jQuery(function() {
+jQuery(function() { 
 	generateForm();
 	jQuery(".checkliste ol").addClass("hideit");
 });
@@ -97,7 +97,7 @@ function generateForm() {
 
 					jQuery(this).prepend(tmpElement);
 
-				});
+				}); 
 
 			} else if (jQuery(this).get(0).tagName == "H4") {
 				h4level++;
@@ -153,6 +153,12 @@ function generateForm() {
 
 		});
 	}
+	
+	
+	jQuery("span.unchecked").each(function(indexh2, value) {
+		jQuery(this).parent().find("input").click();
+	});			
+	
 
 }
 /*

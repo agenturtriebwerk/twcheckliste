@@ -1,13 +1,19 @@
 * {
-	background-color: white !important;
 	background-image: none !important;
+	box-sizing: border-box;
 }
+@page  
+{ 
+    size: auto;
+    margin: 5mm 5mm 5mm 5mm;  
+} 
 
 body {
 	background-color: #FFFFFF;
 	color: #000000;
 	font: 11px "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
 	max-width: 794px;
+	margin: 0;	
 }
 
 h1 {
@@ -15,16 +21,23 @@ h1 {
 	font-size: 16px;
 	padding-top: 15px;
 	text-transform: uppercase;
+	position: relative;
+	z-index: 5;	
 }
 
 h2 {
 	font-size: 14px;
 	text-transform: uppercase;
 	color: #88BA15;
+	position: relative;
+	z-index: 5;	
 }
 
 h3 {
 	margin-bottom: 0px;
+	margin-top: 10px;
+	position: relative;
+	z-index: 5;	
 }
 
 p {
@@ -39,6 +52,18 @@ img {
 	border: none;
 }
 
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+}
+.clearfix {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
 .optiongroup {
 	padding: 0 15px 0 0;
 }
@@ -51,30 +76,88 @@ img {
 	padding: 5px 0;
 }
 
+.ebene3 .checkliste_option {
+	width: 100%;
+}
+
 .checkliste_eingabefeld {
 	display: inline;
 	margin-left: 5px;
 }
 
+
 .ebene2 {
-	page-break-inside: avoid;
 	clear: both;
 	float: left;
 	width: 100%;
 	padding-bottom: 10px;
 	display: block;
+	position: relative;
+	z-index: 5;	
 }
+
+.checkpointlist {
+	position: relative;
+	z-index: 5;
+}
+
+.ebene2_inner {
+    padding: 0 10px 10px;
+	margin-top: 10px;
+	border: 2px solid transparent;		
+}
+
+/*
 .ebene3 {
     display: block;
     float: left;
-    margin-right: 2%;
-    width: 48%;
+    margin-right: 1%;
+    padding: 0 1% 1%;
+    width: 42%;
+	border: 2px solid transparent;
+	
+}*/
+
+.ebene3_wrap {
+	width: 100%;
+    -moz-column-count:2;
+    -moz-column-gap: 2%;
+    -moz-column-width: 45%;
+    -webkit-column-count:2;
+    -webkit-column-gap: 2%;
+    -webkit-column-width: 45%;
+    column-count: 2;
+    column-gap: 2%;
+    column-width: 45%;
+	
 }
+
+.ebene3 {
+    display: inline-block;
+    padding: 0 10px 8px;
+    width: 100%;
+	position: relative;
+	display: inline-block;
+	border: 2px solid transparent;	
+}
+/*
+.ebene3 {
+    padding: 0 10px 8px;
+	float: left;
+    width: 49%;
+	position: relative;
+	display: inline-block;
+	border: 2px solid transparent;	
+}*/
 
 .ebene3_group {
     display: block;
     float: left;
     margin-bottom: 10px;
+}
+
+h1 span, h2 span, h3 span {
+	display: none;
 }
 
 .checkliste_option {
@@ -86,17 +169,26 @@ img {
 
 .checkliste_option_long {
     float: left;
+	line-height: 20px; 
     margin-right: 10px;
     margin-top: 5px;
     max-width: 350px;
 }
 
+.checkliste_eingabefeld {
+	line-height: 20px;	
+}
+
+.checkliste_eingabefeld .checkliste_checkbox {
+	margin: 6px 4px 4px 0;
+}
+
 .checkliste_checkbox {
     border: 1px solid #88BA15;
     float: left;
-    height: 5px;
+    height: 7px;
     margin: 4px;
-    width: 5px;
+    width: 7px;
 }
 
 .checklist1 img {
@@ -118,10 +210,10 @@ img {
     font-weight: bold;
 }
 .geprueft {
+    border-bottom: 2px solid #88ba15;
     display: block;
     float: right;
+    padding: 10px 0;
     text-align: right;
     width: 100%;
-    padding: 25px 0 10px 0;
-    border-bottom: 2px solid #88BA15;
 }

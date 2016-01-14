@@ -66,8 +66,8 @@ class syntax_plugin_twcheckliste extends DokuWiki_Syntax_Plugin {
 
 			case DOKU_LEXER_UNMATCHED :
 				$html = $this -> replaceTags($match);
-				//print_r($match);
-				//print_r($html);
+				print_r($match);
+				print_r($html);
 				return array($state, $html);
 			default :
 				return array('state' => $state, 'bytepos_end' => $pos + strlen($match));
@@ -87,7 +87,8 @@ class syntax_plugin_twcheckliste extends DokuWiki_Syntax_Plugin {
 		if ($mode == 'xhtml') {
 			switch ($data['state']) {
 				case DOKU_LEXER_ENTER :
-					$renderer -> doc .= '<form action="lib/plugins/twcheckliste/theme_twCheckliste/tw_checklist.php" method="post" target="_blank"><div class="checkliste" id="checkliste"><input type="hidden" name="match_kind" value="' . $this -> match_kind . '" />';
+
+					$renderer -> doc .= '<link href="/lib/plugins/twcheckliste/style.css" type="text/css" rel="stylesheet" /><form action="lib/plugins/twcheckliste/theme_twCheckliste/tw_checklist.php" method="post" target="_blank"><div class="checkliste" id="checkliste"><input type="hidden" name="match_kind" value="' . $this -> match_kind . '" />';
 					break;
 
 				case DOKU_LEXER_UNMATCHED :
@@ -105,9 +106,12 @@ class syntax_plugin_twcheckliste extends DokuWiki_Syntax_Plugin {
 					}
 					
 					break;
-
+ 
 				case DOKU_LEXER_EXIT :
-					$renderer -> doc .= '</div><br /><input type="submit" class="button" name="checkliste" value="'.$this -> getLang('btn_generieren').'" /> </form>';
+					$renderer -> doc .= '</div><br /><div style="color: red;"><b>Wegen aktuellen Bug im Druck von Webkit Browser bitte Firefox verwenden !!!</b></div><br /><input type="submit" class="button" name="checkliste" value="'.$this -> getLang('btn_generieren').'" /> </form>';
+					$renderer -> doc = str_replace ("ROLLE_PM<", "<span class='rolle_pm'>ROLLE_PM</span><", $renderer -> doc);
+					$renderer -> doc = str_replace ("UNCHECKED<", "<span class='unchecked'>UNCHECKED</span><", $renderer -> doc);							
+							 
 					//close hiddenBody and hiddenGlobal
 					/*if (array_pop($this -> editableBlocks)) {
 					 $renderer -> finishSectionEdit($data['bytepos_end']);
